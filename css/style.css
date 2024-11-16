@@ -19,6 +19,19 @@ body{
 
 }
 
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+
 /* ----------------
         HEADER
 ------------------- */
@@ -265,7 +278,7 @@ body{
     .searches li{
 
         padding-left: 18px;
-        border-left: 2px solid transparent;
+        border-left: 2px solid white;
     }
 
     .searches li:first-child{
@@ -284,6 +297,15 @@ body{
         display: none;
     }
 
+    /* header user */
+
+   .app{
+       display:none;
+   }
+
+    .user{
+        display: none;
+    }
 
 
 }
