@@ -15,60 +15,176 @@
 
 body{
 
-    
-
     display: flex;
+
+}
+
+/* ----------------
+        HEADER
+------------------- */
 
     header{
 
-        background-color: red;
+        background-color: black;
         height: calc(100vh - 100px);
-        width: 400px;
-        
-
-        .header-logo{
-
-            height: 100px;
-            background-color: black;
-            color: white;
-        }
-
-        .header-body{
-
-            height: 100px;
-            background-color: yellow;
-            height: 400px;
-        }
-
-        .header-user{
-
-            height:100px;
-            background-color: pink;
-            
-
-        }
+        width: 200px;
+         
     }
+    
+/* header top */
+
+    .header-logo{
+
+        height: 100px;
+        background-color: black;
+        color: white;
+    }
+
+    .header-logo .searches li{
+
+        margin: 10px 20px;
+        gap: 10px;
+        display: flex;
+    }
+        
+    .logo{
+
+        max-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .searches li{
+
+        display: flex;
+        align-items: center;
+    }
+
+    .searches li img {
+
+        height: 26px;
+    }
+
+    
+    .cerca{
+
+    color: gray;
+    }
+           
+    .libri{
+
+    color: gray;
+    }
+
+    .small{
+        display: none;
+        max-width:50px;
+    }
+
+    /* header body */
+
+    .header-body{
+
+        height: 100px;
+        background-color: black;
+        color: gray;
+    }
+
+    h2{
+        display: flex;
+        margin-top: 80px;
+        position: relative;
+        left: 30px;
+    }
+
+    .fa-plus{
+
+        background-color: gray;
+        padding: 10px;
+        color: black;
+        margin: 5px;
+    }
+    
+
+    .play li{
+
+        display:flex;
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 10px;
+        position: relative;
+        left:20px;
+        top:0;
+        list-style: none;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-grow: 1;
+        overflow-y: auto;
+           
+    }
+
+
+    h2{
+        color: white;
+        font-size: 16px;
+        
+    }
+
+    /* header user */
+
+    .header-user{
+
+        height:100px;
+        background-color: black;   
+    }
+
+        
+    .app{
+        color: gray;
+        display: flex;
+        position: relative;
+        top: 270px;
+        left:20px;
+    }
+
+    .user{
+
+        display: flex;
+        width: 100%;
+        position: relative;
+        top: 278px;
+        left:20px;
+        color: white;
+    }
+
+    .hr{
+        padding: 10px;
+    }
+
+
+    /* ---------------
+        MAIN
+    -------------------*/
 
     main{
 
         background-color: blue;
         height: calc(100vh - 100px);
         width: 100%;
+        flex-grow: 1;
+    }
 
-        .main-top{
 
-            height: 100px;
-            background-color: palevioletred;
+    .main-top{
 
-        }
-
-        .main-body{
-
-            
-        }
-
+        height: 100px;
+        background-color: palevioletred;
 
     }
+
+
+    /* ---------------
+       FOOTER
+    ------------------*/
 
     footer{
 
@@ -78,130 +194,97 @@ body{
         position: absolute;
         bottom: 0;
         display: flex;
-
-        .footer-left{
-
-            width: 400px;
-            height: 100px;
-            background-color: blueviolet;
-        }
-
-        
-        .footer-center{
-
-            width: 900px;
-            height: 100px;
-            background-color: lightsalmon;
-        }
-
-        
-        .footer-right{
-
-            width: 400px;
-            height: 100px;
-            background-color: yellowgreen;
-        }
     }
 
-}
 
+    .footer-left{
 
-/* ----------------
-   HEADER
-------------------- */
+        width: 400px;
+        height: 100px;
+        background-color: blueviolet;
+    }
 
+        
+
+    .footer-center{
+
+        width: 900px;
+        height: 100px;
+        background-color: lightsalmon;
+    }
+
+        
+    .footer-right{
+
+        width: 400px;
+        height: 100px;
+        background-color: yellowgreen;
+    }
+  
 
 
 /* ---------------
   RESPONSIVE
 ------------------ */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 576px) {
 
     
-    header{
-
-        background-color: red;
+    header {        
         height: calc(100vh - 100px);
-        max-width: 100px;
-        
-
-        .header-logo{
-
-            height: 100px;
-            background-color: black;
-            color: white;
-        }
-
-        .header-body{
-
-            height: 100px;
-            background-color: yellow;
-            height: 400px;
-        }
-
-        .header-user{
-
-            height:100px;
-            background-color: pink;
-            
-
-        }
+        max-width: 100%;
+        text-align: left;
+    }
+       
+    /* header top */
+    .small {
+        display:inline;
+        margin-bottom: 50px;
     }
 
-    main{
+    .logo{
 
-        background-color: blue;
-        height: calc(100vh - 100px);
-        width: 100%;
-
-        .main-top{
-
-            height: 100px;
-            background-color: palevioletred;
-
-        }
-
-        .main-body{
-
-            
-        }
-
-
+        display: none;
     }
 
-    footer{
+    .home{
 
-        background-color: green;
-        height: 100px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-
-        .footer-left{
-
-            width: 400px;
-            height: 100px;
-            background-color: blueviolet;
-        }
-
-        
-        .footer-center{
-
-            width: 900px;
-            height: 100px;
-            background-color: lightsalmon;
-        }
-
-        
-        .footer-right{
-
-            width: 400px;
-            height: 100px;
-            background-color: yellowgreen;
-        }
+        display: none;
     }
+
+    .cerca{
+
+        display: none;
+    }
+
+    .libri{
+
+        display: none;
+    }
+
+    .searches li{
+
+        padding-left: 18px;
+        border-left: 2px solid transparent;
+    }
+
+    .searches li:first-child{
+
+        border-color: 2px solid white;
+    }
+
+    /* header body */
+
+    .play li{
+
+        display: none;
+    }
+
+    h2{
+        display: none;
+    }
+
+
 
 }
     
