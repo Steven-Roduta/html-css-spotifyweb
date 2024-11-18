@@ -218,19 +218,21 @@ img {
 
     .btn{
 
-        display: relative;
+        display: flex;
         flex-shrink: 0;
         text-align: center;
         background-color: #080b12 ;
         color: white;
         border-color: white;
         border-right: 2px;
-        border-radius: 19px;
-        position: relative;
+        border-radius: 39px;
+        position: sticky;
         top: 20px;
-        right: 10px;
-        width: 13%;
-        padding: 5px; 
+        right: 50px;
+        z-index: 10;
+        min-height: 70px;
+        padding: 6px 30px; 
+        align-items: center;
         float: right;
     }
 
@@ -246,7 +248,6 @@ img {
   
         display: flex;
         justify-content: center;
-        list-style: none;
         gap: 30px;
         margin-top: 30px;
         width: 100%;
@@ -255,7 +256,25 @@ img {
     }
 
     .list ul{
+        display: flex;
+        list-style: none;
         color: gray;
+        flex-wrap: wrap;
+    }
+
+    .list a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: gray;
+    }
+
+    .list .linea-hover{
+
+        height: 2px;
+        width: 54px;
+        background-color: lime;
+        margin: auto;
+        margin-top: 4px;
     }
 
     h3{
@@ -270,12 +289,21 @@ img {
         font-size: 30px;
     }
 
+    .main-body .album u{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        width: calc (100% / 2);
+        flex-shrink: 0;
+    }
+
     .album ul{
         display: flex;
         justify-content: space-around;
         list-style: none;
-        width: 100%;
         gap: 50px;
+        flex-wrap: wrap;
         
     }
     
@@ -283,6 +311,8 @@ img {
         text-align: center;
         font-size: 20px;
         color: white;
+
+
     }
 
     .jhon p{
@@ -316,13 +346,22 @@ img {
         margin: 50px;
         gap: 30px;
         list-style: none;
+
     }
 
     .artisti li{
+        border-radius: 55%;
+        overflow: hidden;
+    }
+
+    .artisti p{
         text-align: center;
         color: white;
         align-items: flex-end;
         font-size: 20px;
+        margin-top: 10px;
+        
+
     }
 
 
@@ -404,9 +443,50 @@ img {
         justify-content: center;
         font-size: 30px;
         position: relative;
-        top: 30px;
+        top: 10px;
         gap: 50px;
         
+    }
+
+    .bar{
+        height: 5px;
+        width: 80%;
+        background-color: gray;
+        display: flex;
+        position: relative;
+        top: 30px;
+        left: 100px;
+    }
+
+    .bar .bar-two {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        position: relative;
+        top: 0px;
+              
+    }
+
+    .min-uno p{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 103px;
+        left: 100px;
+        margin-right: 20px;
+        color: white;
+    }
+
+    .min p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        top: 60px;
+        right: 70px;
+        margin-left: 20px;
+        color: white;
     }
 
         
@@ -427,7 +507,7 @@ img {
         font-size: 20px;
         position: relative;
         top: 38px;
-        gap: 50px;
+        gap: 30px;
         
     }
   
@@ -507,27 +587,6 @@ img {
         
     }
 
-    .app-two{
-        display: inline;
-        font-size: 20px;
-        display: flex;
-        position: relative;
-        top: 150px;
-        left: 18px;
-        color: gray;
-        
-    }
-
-    .user-two{
-        display: inline;
-        font-size: 30px;
-        display: flex;
-        position: relative;
-        top: 170px;
-        left: 15px;
-        color: gray;
-        
-    }
 
 
     /* header body */
@@ -579,5 +638,26 @@ img {
     }
 }
     
+@media screen and (min-width: 768px) {
+
+    .album .ul{
+        width: calc(100% / 4);
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .album .ul{
+        width: calc(100% / 6);
+    }
+    
+}
+
 
 
