@@ -30,6 +30,11 @@ body {
     font-weight: 700;
     font-style: normal;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
   
 
 /* ----------------
@@ -40,7 +45,7 @@ body {
 
         background-color: black;
         height: calc(100vh - 100px);
-        width: 200px;
+        width: 300px;
          
     }
     
@@ -92,6 +97,22 @@ body {
         display: none;
         max-width:50px;
     }
+
+    .home-two{
+        display: none;
+        max-width: 50px;
+    }
+
+    .cerca-two{
+        display: none;
+        max-width: 50px;
+    }
+
+    .libri-two{
+        display: none;
+        max-width: 50px;
+    }
+
 
     /* header body */
 
@@ -180,18 +201,128 @@ body {
 
     main{
 
-        background-color: blue;
+        background-color: #141922;
         height: calc(100vh - 100px);
         width: 100%;
         flex-grow: 1;
+        overflow-y:scroll;
+        
     }
-
 
     .main-top{
 
         height: 100px;
-        background-color: palevioletred;
+        background-color: #080b12;
+        width: 100%;
+    }
 
+    .btn{
+
+        display: relative;
+        flex-shrink: 0;
+        text-align: center;
+        background-color: #080b12 ;
+        color: white;
+        border-color: white;
+        border-right: 2px;
+        border-radius: 19px;
+        position: relative;
+        top: 20px;
+        right: 10px;
+        width: 13%;
+        padding: 5px; 
+        float: right;
+    }
+
+    .main-body{
+
+        display: absolute;
+        width: 100%;
+        flex-grow: 1;
+        
+    }
+
+    .main-body .list ul{
+  
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 30px;
+        margin-top: 30px;
+        width: 100%;
+        flex-shrink: 0;
+        
+    }
+
+    .list ul{
+        color: gray;
+    }
+
+    h3{
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin: 40px;
+    }
+
+
+    h3{
+        font-size: 30px;
+    }
+
+    .album ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        gap: 50px;
+        
+    }
+    
+    .album li{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+
+    .jhon p{
+        margin-left: 43px;
+        color: gray;
+    }
+
+    .doe ul{
+        display: flex;
+        width: 80%;
+        margin: 50px;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .doe li{
+        text-align: center;
+        color: white;
+        align-items: flex-end;
+        font-size: 20px;
+    }
+
+    .pop p{
+        margin-left: 43px;
+        color: gray;
+    }
+
+    .artisti ul{
+        display: flex;
+        width: 80%;
+        margin: 50px;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .artisti li{
+        text-align: center;
+        color: white;
+        align-items: flex-end;
+        font-size: 20px;
     }
 
 
@@ -209,23 +340,60 @@ body {
         display: flex;
     }
 
-
     .footer-left{
 
         width: 400px;
         height: 100px;
-        background-color: blueviolet;
+        background-color: #282828;
     }
 
-        
+    .album-sinister{
 
-    .footer-center{
+        width: 60px;
+        margin: 20px;
+        
+    }
+
+    h5{
+        display: flex;
+        margin-left: 100px;
+        position: relative;
+        bottom: 70px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .title p{
+        display: flex;
+        margin-left: 100px;
+        position: relative;
+        bottom: 70px;
+        font-size: 15px;
+        color: gray;
+        flex-shrink: 0;
+    }
+
+    .icons ul{
+
+        width: 30px;
+        margin-left: 280px;
+        display: flex;
+        list-style: none;
+        position: relative;
+        bottom: 100px;
+        gap: 10px;
+        color: white;
+        flex-shrink: 0;
+
+    }
+   
+
+   .footer-center{
 
         width: 900px;
         height: 100px;
         background-color: lightsalmon;
     }
-
         
     .footer-right{
 
@@ -253,6 +421,9 @@ body {
     .small {
         display:inline;
         margin-bottom: 50px;
+        margin-top: 10px;
+        position: relative;
+        left: 5px;
     }
 
     .logo{
@@ -275,16 +446,60 @@ body {
         display: none;
     }
 
-    .searches li{
-
-        padding-left: 18px;
-        border-left: 2px solid white;
+    .home-two{
+        display: inline;
+        font-size: 30px;
+        display: flex;
+        position: relative;
+        bottom: 40px;
+        right: 5px;
+        
     }
 
-    .searches li:first-child{
-
-        border-color: 2px solid white;
+    .cerca-two{
+        display: inline;
+        font-size: 30px;
+        display: flex;
+        position: relative;
+        bottom: 40px;
+        right: 5px;
+        color: gray;
+        
     }
+
+    .libri-two{
+        display: inline;
+        font-size: 30px;
+        display: flex;
+        position: relative;
+        bottom: 40px;
+        right: 5px;
+        color: gray;
+        
+    }
+
+    .app-two{
+        display: inline;
+        font-size: 20px;
+        display: flex;
+        position: relative;
+        top: 150px;
+        left: 18px;
+        color: gray;
+        
+    }
+
+    .user-two{
+        display: inline;
+        font-size: 30px;
+        display: flex;
+        position: relative;
+        top: 170px;
+        left: 15px;
+        color: gray;
+        
+    }
+
 
     /* header body */
 
@@ -297,6 +512,7 @@ body {
         display: none;
     }
 
+
     /* header user */
 
    .app{
@@ -307,7 +523,31 @@ body {
         display: none;
     }
 
+    /* main */
 
+    .btn{
+        display: inline;
+        flex-shrink:0;
+    }
+
+    .list{
+        display: inline;
+        flex-shrink: 0;
+        flex-direction: column;
+    }
+
+    main {        
+        height: calc(100vh - 140px);
+        max-width: 100%;
+        flex-shrink: 0;
+    }
+
+
+    .album ul{
+
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
 }
     
 
